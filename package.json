@@ -1,0 +1,24 @@
+{
+  "name": "invoke-script",
+  "version": "0.0.1",
+  "description": "Invoke an exported function in a js file from a package.json script",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "bin": "./bin/cli.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stefan-van-de-Vooren/invoke-script.git"
+  },
+  "keywords": [
+    "npm",
+    "scripts"
+  ],
+  "author": "Stefan van de Vooren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stefan-van-de-Vooren/invoke-script/issues"
+  },
+  "homepage": "https://github.com/Stefan-van-de-Vooren/invoke-script#readme"
+}
