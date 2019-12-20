@@ -4,7 +4,7 @@
   "description": "Invoke an exported function from a package.json script",
   "main": "src/index.js",
   "scripts": {
-    "semantic-release": "semantic-release"
+    "release": "semantic-release"
   },
   "bin": "./bin/cli.js",
   "repository": {
