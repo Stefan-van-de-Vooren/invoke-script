@@ -1,10 +1,10 @@
 {
   "name": "invoke-script",
-  "version": "0.0.1",
-  "description": "Invoke an exported function in a js file from a package.json script",
+  "version": "1.0.0",
+  "description": "Invoke an exported function from a package.json script",
   "main": "src/index.js",
   "scripts": {
-    "test": "test"
+    "semantic-release": "semantic-release"
   },
   "bin": "./bin/cli.js",
   "repository": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Stefan-van-de-Vooren/invoke-script/issues"
   },
-  "homepage": "https://github.com/Stefan-van-de-Vooren/invoke-script#readme"
+  "homepage": "https://github.com/Stefan-van-de-Vooren/invoke-script#readme",
+  "dependencies": {
+    "semantic-release": "15.13.x"
+  }
 }
