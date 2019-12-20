@@ -21,7 +21,15 @@
     "url": "https://github.com/Stefan-van-de-Vooren/invoke-script/issues"
   },
   "homepage": "https://github.com/Stefan-van-de-Vooren/invoke-script#readme",
-  "dependencies": {
-    "semantic-release": "15.13.x"
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "husky": "^3.1.0",
+    "semantic-release": "15.13.x",
+    "@commitlint/config-conventional": "^8.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
