@@ -1,4 +1,4 @@
-var path = require('path');
+const path = require('path');
 
 const makePathToScriptAbsolute = (input) => {
     if (path.isAbsolute(input)) {
@@ -7,14 +7,14 @@ const makePathToScriptAbsolute = (input) => {
     return path.join(path.resolve(), input);
 };
 
-const invokeFunction = (fn, args) => fn.apply(args);
+const invokeFunction = (fn, args) => fn.apply(null, args);
 
-const isFunction = (functionToCheck) => functionToCheck && {}.toString.call(functionToCheck) === '[object Function]';
+const isFunction = (functionToCheck) => !!(functionToCheck && {}.toString.call(functionToCheck) === '[object Function]');
 
 const makeStringRed = (value) => `\x1b[31m${value}\x1b[0m`;
 
 const assert = (value, message) => {
-    if (value === false) {
+    if (!value) {
         console.error(makeStringRed(message));
         process.exit(1);
     }
@@ -26,7 +26,7 @@ module.exports = (script, ...args) => {
     const module  = require(makePathToScriptAbsolute(pathToScript));
 
     if(fn) {
-        assert(isFunction(module[fn]), `Could not invoke the function '${fn}' on module ${pathToScript}\n`);
+        assert(isFunction(module[fn]), `Could not invoke the function '${fn}' on module '${pathToScript}'\n`);
         invokeFunction(module[fn], args);
     } else if (isFunction(module.default)) {
         invokeFunction(module.default, args);
