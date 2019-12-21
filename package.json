@@ -4,7 +4,8 @@
   "description": "Invoke an exported function from a package.json script",
   "main": "src/index.js",
   "scripts": {
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "test": "jest"
   },
   "bin": "./bin/cli.js",
   "repository": {
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "husky": "^3.1.0",
+    "jest": "^24.9.0",
     "semantic-release": "15.13.x",
     "@commitlint/config-conventional": "^8.2.0"
   },
