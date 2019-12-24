@@ -1,6 +1,9 @@
 # IDE
 .idea
 
+# Tests
+*.test.js
+
 # Logs
 logs
 *.log
