@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - 10
+
+jobs:
+  include:
+    - stage: release
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - echo "Deploying to npm ..."
+        on:
+            branch: 'master'
