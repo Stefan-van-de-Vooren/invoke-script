@@ -3,6 +3,10 @@ language: node_js
 node_js:
   - 10
 
+script:
+  - npm lint
+  - npm test
+
 jobs:
   include:
     - stage: release
