@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "release": "semantic-release",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src"
   },
   "bin": "./bin/cli.js",
   "repository": {
@@ -24,10 +25,14 @@
   "homepage": "https://github.com/Stefan-van-de-Vooren/invoke-script#readme",
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jest": "^23.2.0",
     "husky": "^3.1.0",
     "jest": "^24.9.0",
-    "semantic-release": "15.13.x",
-    "@commitlint/config-conventional": "^8.2.0"
+    "semantic-release": "15.13.x"
   },
   "husky": {
     "hooks": {
