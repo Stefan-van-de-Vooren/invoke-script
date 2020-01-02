@@ -1,7 +1,8 @@
 # Invoke-script
 This package helps you when you want to call an exported function from a NPM script.
 
-**Travis-ci status:** [![Build Status](https://travis-ci.com/Stefan-van-de-Vooren/invoke-script.svg?branch=master)](https://travis-ci.com/Stefan-van-de-Vooren/invoke-script)
+[![Build Status](https://travis-ci.com/Stefan-van-de-Vooren/invoke-script.svg?branch=master)](https://travis-ci.com/Stefan-van-de-Vooren/invoke-script)
+[![npm](https://img.shields.io/npm/v/invoke-script/latest)](https://www.npmjs.com/package/invoke-script)
 
 ##Motivation
 With NPM and Yarn it is super easy to add scripts to you package to *start*, *build* or *test* your project. In the script you execute a cli command from another package or your own javascript file. For example:
