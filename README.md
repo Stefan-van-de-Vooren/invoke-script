@@ -46,14 +46,14 @@ module.exports = {
 
 Now we can execute the program from the node script after we rewrite the '*hello*' NPM script in: 
 
-`"hello": "node -e 'require(\"./src/hello\").test(\"world\")'"`
+`"hello": "node -e 'require(\"./src/hello\").hello(\"world\")'"`
 
 but with all the escaped quotes it soon becomes unreadable :(
 
   
 The **invoke-script** package helps you to invoke your exported function from a NPM just simple and readable:
 
-`"hello": "invoke-script ./src/hello#test world`
+`"hello": "invoke-script ./src/hello#hello world`
 
 
 ##usages
